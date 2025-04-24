@@ -9,13 +9,13 @@
     </head>
     <body>
         <header class="main-header">
-            <div class="brand-container">
-                <a href="packages/index.html">
-                    <div class="nav-brand"><img src="images/mike.jpg" alt="Mike's photo"></div>
-                </a>
-                <div class="brand-name">Michael Bassey</div>
-            </div>
             <nav class="main-nav">
+                <div class="brand-container">
+                    <a href="#home">
+                        <div class="nav-brand"><img src="images/mike.jpg" alt="Mike's photo"></div>
+                    </a>
+                    <div class="brand-name"><a href="#home">Michael Bassey</a></div>
+                </div>
                 <div class="nav-menu">
                     <ul class="main-nav__items">
                         <li class="main-nav__item"><a href="#home">Home</a></li>
@@ -45,29 +45,29 @@
                 </div>
                 <div class="home__socials">
                     <div class="home-hero__social">
-                    <a href="https://linkedin.com/in/michaelbazze" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
-                        <img src="./images/Linkedin1.jpg" alt="Michael Bassey Linkedin Profile" class="home-hero__social-icon">
-                    </a>
+                        <a href="https://linkedin.com/in/michaelbazze" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
+                            <img src="./images/Linkedin1.jpg" alt="Michael Bassey Linkedin Profile" class="home-hero__social-icon">
+                        </a>
                     </div>
                     <div class="home-hero__social">
-                    <a href="https://twitter.com/michaelbazze" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
-                        <img src="./images/Twitter1.png" alt="Slick Twitter Profile" class="home-hero__social-icon">
-                    </a>
+                        <a href="https://twitter.com/michaelbazze" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
+                            <img src="./images/Twitter1.png" alt="Slick Twitter Profile" class="home-hero__social-icon">
+                        </a>
                     </div>
                     <div class="home-hero__social">
-                    <a href="https://www.youtube.com/channel/UC1IF-GjAt9nsxhlYMAcCOtA" class="home-hero__social-icon-link home-hero__social-icon-link--bd-none" rel="noreferrer" target="_blank">
-                        <img src="./images/Yt1.png" alt="Slick Youtube Channel" class="home-hero__social-icon">
-                    </a>
+                        <a href="https://www.youtube.com/channel/UC1IF-GjAt9nsxhlYMAcCOtA" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
+                            <img src="./images/Yt1.png" alt="Slick Youtube Channel" class="home-hero__social-icon">
+                        </a>
                     </div>
                     <div class="home-hero__social">
-                    <a href="https://github.com/Slickie" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
-                        <img src="./images/Github.png" alt="Slick Github Profile" class="home-hero__social-icon">
-                    </a>
+                        <a href="https://github.com/Slickie" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
+                            <img src="./images/Github.png" alt="Slick Github Profile" class="home-hero__social-icon">
+                        </a>
                     </div>
                     <div class="home-hero__social">
-                    <a href="https://dev.to/Slick" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
-                        <img src="./images/Dev.png" alt="Slick DEV.to Blog Profile" class="home-hero__social-icon">
-                    </a>
+                        <a href="https://dev.to/Slick" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
+                            <img src="./images/Dev.png" alt="Slick DEV.to Blog Profile" class="home-hero__social-icon">
+                        </a>
                     </div>
                 </div>
                 <div class="project__btn">
@@ -216,7 +216,7 @@
                         </span>
                     </h2>
                     <div class="contact__form-container">
-                        <form action="#" class="contact__form" method="post"><input type="hidden" name="form-name" value="form 1">
+                        <form action="mailto:michaelbazze@gmail.com" class="contact__form" method="post" enctype="text/plain"><input type="hidden" name="form-name" value="form 1">
                             <div class="contact__form-field">
                                 <label class="contact__form-label" for="name">Name</label>
                                 <input required="" placeholder="Enter Your Name" type="text" class="contact__form-input" name="name" id="name">
@@ -229,7 +229,7 @@
                                 <label class="contact__form-label" for="message">Message</label>
                                 <textarea required="" cols="30" rows="10" class="contact__form-input" placeholder="Enter Your Message" name="message" id="message"></textarea>
                             </div>
-                            <button type="submit" class="btn contact__btn">
+                            <button type="submit" value="Send" class="btn contact__btn">
                                 Submit
                             </button>
                         </form>
@@ -280,8 +280,8 @@
                 </div>
             </nav>
         </footer>
-        <iframe id="tidio-chat-code" title="Tidio Chat code" style="display: none;"></iframe>
-        <div id="tidio-chat"></div>
+        <!-- <iframe id="tidio-chat-code" title="Tidio Chat code" style="display: none;"></iframe>
+        <div id="tidio-chat"></div> -->
         <script src="scripts.js"></script>
     </body>
 </html>

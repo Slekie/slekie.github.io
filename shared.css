@@ -30,23 +30,24 @@ div {
 }
 
 .main-header {
+    position: relative;
     display: flex;
     height: auto;
-    justify-content: space-between;
     position: sticky;
     top: 0;
     z-index: 100;
-    align-items: center;
     width: 100%;
     background-color: #f0f0f0;
     padding: 0.5rem;
-    box-shadow: 0 10px 100px rgba(0,0,0,0.1);
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+    padding-bottom: 0;
 }
 
 .brand-container {
+    position: relative;
     display: flex;
     flex-direction: row;
-    width: 15rem;
+    width: auto;
     align-items:center;
     margin-left: 1rem;
     cursor: pointer;
@@ -61,13 +62,12 @@ div {
 }
 
 .brand-name {
-    display: flex;
     font-size: 1.0rem;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
     margin-left: 10px;
-    /* width: 30rem; */
+    width: auto;
 }
 
 .brand-name:hover {
@@ -75,22 +75,29 @@ div {
 }
 
 .main-nav {
-    margin-left: 5px;
+    position: relative;
+    /* right: 20rempx; */
+    top: 0px;
+    width: 100%;
+    height: inherit;
+    background-color: transparent;
 }
 
 .main-nav__items {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     text-transform: uppercase;
     font-size: 0.9rem;
 }
 
 .nav-toggle {
-    display: block; /* Show on smaller screens */
-    position: relative;
+    /* display: block; */
+    position: absolute;
+    left: 85%;
+    top: 5px;
     cursor: pointer;
     background: none;
-    border: solid 0.15rem rgb(207, 206, 206);
+    border: solid 0.01rem rgb(223, 218, 218);
     border-radius: 10px;
     margin: 0rem;
     padding: 3px;
@@ -100,22 +107,30 @@ div {
     display: block;
     width: 35px;
     height: 3px;
-    background-color: #333; /* Example color */
+    background-color: #131212; /* Example color */
     margin: 5px 0;
 }
 
 .nav-menu {
-    display: none;  /*Hide by default on smaller screens */
-    flex-direction: column; /* Stack menu items vertically */
-    position: absolute;  /* Needed for positioning */
+    display: none;
+    flex-direction: column;
+    position: relative;
     font-size: 1rem;
     font-weight: 300;
-    top: 3.5rem; /*Adjust as needed */
-    left: 0;
+    /* top: 3.5rem; */
+    /* left: 0; */
     width: 100%;
-    background-color: #f0f0f0; /* Match header background */
-    text-align: center; /* Center text within the menu */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add a subtle shadow */
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    width: 100%;
+    background-color: #f0f0f0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-menu.show{
+    display: block;
 }
 
 .nav-menu ul {
@@ -146,29 +161,6 @@ div {
 .nav-menu.active { /* Show the menu when active */
     display: flex;
 }
-
-/* .nav-menu a:hover{
-    font-size:large;
-} */
-
-/* button {
-    background-color: #03270e;
-    color: #f0f0f0;
-    cursor: pointer;
-    font: inherit;
-    border: #03270e;
-    padding: 8px;
-    border-radius: 50px;
-    font-weight: bold;
-} */
-
-/* button:hover,
-button:active {
-    background-color: #f0f0f0;
-    color: #03270e;
-    outline: none;
-} */
-
 
 h2 {
     display: block;
@@ -216,11 +208,6 @@ h3 {
     margin: 0;
 }
 
-/* .main-footer__icon {
-    display: block;
-
-} */
-
 .main-footer__link {
     margin: 0.5rem;
 }
@@ -252,9 +239,6 @@ h3 {
 }
 
 .main-footer__social-cont {
-    /* margin-top: 2rem; */
-    /* display: block; */
-    /* flex-wrap: wrap; */
     margin: 0;
     padding: 0;
     display: flex;
@@ -270,7 +254,6 @@ h3 {
 }
 
 .main-footer__icon {
-    /* margin: 0 1rem; */
     border-radius: 4px;
 }
 
@@ -283,8 +266,8 @@ h3 {
 @media (min-width: 45rem) { /* Adjust breakpoint as needed */
     
     .main-header {
-        position: sticky;
-        top: 0;
+        /* position: sticky; */
+        /* top: 0; */
         display:flex;
         flex-direction: row;
         width: 100%;
@@ -296,9 +279,10 @@ h3 {
         position: relative;
         display: flex;
         flex-direction: row;
-        align-items: center;
-        width: 70%;
+        /* align-items: center; */
+        width: 95%;
         margin: 0;
+        justify-content: space-between;
     }
 
     .nav-toggle {
@@ -308,11 +292,11 @@ h3 {
     .nav-menu {
         position: relative;
         top: auto;
-        /* left: 5%; */
+        /* left: auto; */
         align-items: center;
         display: flex;
         flex-direction: row;  /*Arrange items horizontally*/
-        width: 100%;
+        width: auto;
         justify-content: center;
         background-color: transparent;
         box-shadow: none;
